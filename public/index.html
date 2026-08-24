@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF AI Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>📄 PDF AI Analyzer</h1>
+        <p>Upload your PDF and analyze it using Gemini AI</p>
+
+        <div class="upload-box">
+            <input type="file" id="pdfFile" accept=".pdf">
+
+            <label for="pdfFile" class="upload-btn">
+                Choose PDF
+            </label>
+
+            <p id="fileName">No file selected</p>
+
+            <button id="analyzeBtn">
+                Analyze PDF
+            </button>
+        </div>
+
+        <div id="loading" class="hidden">
+            Analyzing PDF... Please wait ⏳
+        </div>
+
+        <div id="error" class="error"></div>
+
+        <div class="result-box">
+            <h2>AI Result</h2>
+            <pre id="result">Your result will appear here...</pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
